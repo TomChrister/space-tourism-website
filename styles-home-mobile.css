@@ -1,7 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-image: url("assets/home/background-home-mobile.jpg");
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/home/background-home-mobile.jpg');
+    background-size: cover; /
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 0 24px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
 }
