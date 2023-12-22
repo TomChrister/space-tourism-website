@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/destination/background-destination-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 0 24px;
+}
+
+.destination {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.number {
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    opacity: 0.25;
+}
+
+.pick-your {
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin-left: 18px;
+}
+
+.moon {
+    display: flex;
+    justify-content: center;
+    padding: 18px 0 18px 0;
+}
+
+.destination-overview {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.word-moon {
+    border-bottom: 3px solid #FFFFFF;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 8px;
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.word {
+    color: #D0D6F9;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+}
+
+.moon-header {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 31px 0 0 0;
+}
+
+.moon-text {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 0 0 32px 0;
+    border-bottom: 1px solid #383B4B;
+    width: 80%;
+}
+
+.moon-text-border {
+    display: flex;
+    justify-content: center;
+}
+
+.distance {
+    display: flex;
+    justify-content: center;
+}
+
+.distance span {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+    padding: 32px 0 12px 0;
+}
+
+.distance-two {
+    display: flex;
+    justify-content: center;
+}
+
+.distance-two span {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.travel-time {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+    padding: 32px 0 12px 0;
+}
+
+.travel-days {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair, Serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
