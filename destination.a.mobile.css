@@ -55,18 +55,14 @@ header {
     margin: 0;
 }
 
-.menu-number {
-    color: #FFF;
-    font-family: Barlow Condensed, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.7px;
-    margin-right: 8px;
+.menu-items li {
+    padding: 0 0 32px 0;
+    display: block;
 }
 
-.menu-word {
+.menu-items a {
+    text-decoration: none;
+    transition: color 0.3s ease;
     color: #FFF;
     font-family: Barlow Condensed, sans-serif;
     font-size: 16px;
@@ -77,33 +73,18 @@ header {
     text-transform: uppercase;
 }
 
-.menu-items li {
-    padding: 0 0 32px 0;
-    display: block;
+.menu-items .menu-number strong {
+    margin-right: 12px;
 }
 
-.menu-items a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    transition: color 0.3s ease;
+.menu-number:hover {
+    font-weight: bolder;
 }
 
 .destination {
     display: flex;
     justify-content: center;
     margin-top: 16px;
-}
-
-.number {
-    color: #FFF;
-    font-family: Barlow Condensed, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.7px;
-    opacity: 0.25;
 }
 
 .pick-your {
@@ -116,6 +97,17 @@ header {
     letter-spacing: 2.7px;
     text-transform: uppercase;
     margin-left: 18px;
+}
+
+.number {
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    opacity: 0.25;
 }
 
 .moon {
@@ -250,8 +242,4 @@ header {
     cursor: pointer;
     padding: 34px 26px 0 0;;
     float: right;
-}
-
-.close-icon svg {
-    fill: #333;
 }
