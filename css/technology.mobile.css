@@ -7,14 +7,26 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
     background-size: cover;
 }
 
 .destination {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin: 16px 0 32px 0;
+}
+
+.space-launch {
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin: 0 0 0 16px;
 }
 
 .number {
@@ -26,43 +38,21 @@ body {
     line-height: normal;
     letter-spacing: 2.7px;
     opacity: 0.25;
+    margin: 0;
 }
 
-.meet-crew {
-    color: #FFF;
-    font-family: Barlow Condensed, sans-serif;
+.number-circle {
+    color: #0B0D17;
+    text-align: center;
+    font-family: Bellefair, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 2.7px;
-    text-transform: uppercase;
-    margin-left: 18px;
+    letter-spacing: 1px;
 }
 
-.crew {
-    display: flex;
-    justify-content: center;
-    padding: 18px 0 0 0;
-    margin: 0 auto;
-}
-
-.line {
-    width: 327px;
-    margin: 0 auto;
-    height: 1px;
-    background-color: #68696e;
-}
-
-.svg {
-    display: flex;
-    justify-content: center;
-    padding: 32px 0 32px 0;
-}
-
-.commander {
-    display: flex;
-    justify-content: center;
+.number-circle-two {
     color: #FFF;
     text-align: center;
     font-family: Bellefair, sans-serif;
@@ -70,13 +60,31 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
-    opacity: 0.4951;
+    letter-spacing: 1px;
 }
 
-.name {
+.svg {
     display: flex;
     justify-content: center;
+    margin: 34px 0 26px 0;
+    gap: 16px;
+}
+
+.terminology {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.launch-vehicle {
     color: #FFF;
     text-align: center;
     font-family: Bellefair, sans-serif;
@@ -85,12 +93,10 @@ body {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    padding: 8px 0 16px 0;
+    margin: 0;
 }
 
-.info {
-    display: flex;
-    justify-content: center;
+.text {
     color: #D0D6F9;
     text-align: center;
     font-family: Barlow, sans-serif;
@@ -98,4 +104,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
+    margin: 0;
+    padding: 16px 24px 0 24px
 }
