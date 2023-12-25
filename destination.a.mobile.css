@@ -18,21 +18,77 @@ header {
     padding: 24px 24px 0 24px;
 }
 
-.destination {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
+.menu-container {
+    position: relative;
 }
 
-.number {
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 254px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(40px);
+}
+
+.menu-icon {
+    cursor: pointer;
+    padding: 15px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: background-color 0.3s ease;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 118px 0 0 32px;
+    margin: 0;
+}
+
+.menu-items li {
+    padding: 0 0 32px 0;
+    display: block;
+}
+
+.menu-items a {
+    text-decoration: none;
+    transition: color 0.3s ease;
     color: #FFF;
     font-family: Barlow Condensed, sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: 2.7px;
-    opacity: 0.25;
+    text-transform: uppercase;
+}
+
+.menu-items .menu-number strong {
+    margin-right: 12px;
+}
+
+.menu-items .menu-number .zero {
+    margin-right: 9px;
+}
+
+.menu-number:hover {
+    font-weight: bolder;
+}
+
+.destination {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
 }
 
 .pick-your {
@@ -45,6 +101,17 @@ header {
     letter-spacing: 2.7px;
     text-transform: uppercase;
     margin-left: 18px;
+}
+
+.number {
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    opacity: 0.25;
 }
 
 .moon {
@@ -60,6 +127,33 @@ header {
 }
 
 .word-moon {
+    position: relative;
+    display: inline-block;
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.word-moon::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Extend the underline to cover the entire width of the container */
+    height: 3px; /* Set the height of the underline */
+    background-color: #FFFFFF; /* Set the color of the underline */
+    bottom: 0; /* Position the underline at the bottom of the container */
+    left: 0; /* Start the underline from the left edge of the container */
+    transform: translateX(-1.2px); /* Adjust for the letter spacing */
+}
+
+/*
+.word-moon {
     border-bottom: 3px solid #FFFFFF;
     display: inline-block;
     position: relative;
@@ -74,6 +168,7 @@ header {
     text-transform: uppercase;
     text-align: center;
 }
+*/
 
 .word {
     color: #D0D6F9;
@@ -89,7 +184,7 @@ header {
 .moon-header {
     color: #FFF;
     text-align: center;
-    font-family: Bellefair;
+    font-family: Bellefair, sans-serif;
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
@@ -166,10 +261,17 @@ header {
 .travel-days {
     color: #FFF;
     text-align: center;
-    font-family: Bellefair, Serif;
+    font-family: Bellefair, sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.close-icon {
+    display: none;
+    cursor: pointer;
+    padding: 34px 26px 0 0;;
+    float: right;
 }
