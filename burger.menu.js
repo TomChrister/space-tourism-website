@@ -1,4 +1,3 @@
-// Update the JavaScript code in burger.menu.js
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menuIcon');
@@ -19,4 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
             closeIcon.style.display = 'block'; // Show close icon when menu is open
         }
     }
+
+    // Add an event listener to close the menu when clicking outside of it
+    document.body.addEventListener('click', function (event) {
+        const isMenuClicked = menuIcon.contains(event.target) || closeIcon.contains(event.target);
+        const isMenuOpen = hamburgerMenu.style.transform === 'translateX(0%)';
+
+        if (!isMenuClicked && isMenuOpen) {
+            hamburgerMenu.style.transform = 'translateX(100%)';
+            closeIcon.style.display = 'none';
+        }
+    });
 });
+
