@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
           rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -79,42 +80,165 @@
         <img src="assets/destination/image-moon.png" alt="moon" style="width: 170px">
     </div>
     <div class="destination-overview">
-        <span class="word-moon">Moon</span>
-        <span class="word">Mars</span>
-        <span class="word">Europa</span>
-        <span class="word">Titan</span>
-    </div>
-    <div class="moon-header">
-        <span>Moon</span>
-    </div>
-    <div class="moon-text-border">
-        <div class="moon-text">
-            <span>
-                See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
-                perspective and come back refreshed. While you’re there, take in some history by visiting the
-                Luna 2 and Apollo 11 landing sites.
-            </span>
-        </div>
-    </div>
-    <div class="horizontal-line"></div>
-    <div class="distance">
-        <span>Avg. distance</span>
-    </div>
-    <div class="distance-two">
-        <span>384,400km</span>
-    </div>
-    <div class="travel-time">
-        <span>
-            Est. travel time
-        </span>
-    </div>
-    <div class="travel-days">
-        <span>
-            3 days
-        </span>
+        <span class="word-moon" onclick="showContent('moon')">Moon</span>
+        <span class="word" onclick="showContent('mars')">Mars</span>
+        <span class="word" onclick="showContent('europa')">Europa</span>
+        <span class="word" onclick="showContent('titan')">Titan</span>
     </div>
 
+    <div class="carousel-container">
+        <div class="content" id="moon-content" style="display: block">
+            <div class="destination-details">
+                <div class="moon-header">
+                    <span>Moon</span>
+                </div>
+                <div class="moon-text-border">
+                    <div class="moon-text">
+                    <span>
+                        See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                        perspective and come back refreshed. While you’re there, take in some history by visiting the
+                        Luna 2 and Apollo 11 landing sites.
+                    </span>
+                    </div>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="distance">
+                    <span>Avg. distance</span>
+                </div>
+                <div class="distance-two">
+                    <span>384,400km</span>
+                </div>
+                <div class="travel-time">
+                <span>
+                    Est. travel time
+                </span>
+                </div>
+                <div class="travel-days">
+                <span>
+                    3 days
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="mars-content">
+        <div class="destination-details">
+            <div class="moon">
+                <img src="assets/destination/image-mars.png" alt="mars" style="width: 170px">
+            </div>
+            <div class="moon-header">
+                <span>Mars</span>
+            </div>
+            <div class="moon-text-border">
+                <div class="moon-text">
+                    <span>
+                        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+                    </span>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="distance">
+                <span>Avg. distance</span>
+            </div>
+            <div class="distance-two">
+                <span>225 MIL. KM</span>
+            </div>
+            <div class="travel-time">
+                <span>
+                    Est. travel time
+                </span>
+            </div>
+            <div class="travel-days">
+                <span>
+                    9 months
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="europa-content">
+        <div class="destination-details">
+            <div class="moon">
+                <img src="assets/destination/image-europa.png" alt="europa" style="width: 170px">
+            </div>
+            <div class="moon-header">
+                <span>Europa</span>
+            </div>
+            <div class="moon-text-border">
+                <div class="moon-text">
+                    <span>
+                        The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+                    </span>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="distance">
+                <span>Avg. distance</span>
+            </div>
+            <div class="distance-two">
+                <span>628 MIL. km</span>
+            </div>
+            <div class="travel-time">
+                <span>
+                    Est. travel time
+                </span>
+            </div>
+            <div class="travel-days">
+                <span>
+                    3 YEARS
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="titan-content">
+        <div class="destination-details">
+            <div class="moon">
+                <img src="assets/destination/image-titan.png" alt="titan" style="width: 170px">
+            </div>
+            <div class="moon-header">
+                <span>Titan</span>
+            </div>
+            <div class="moon-text-border">
+                <div class="moon-text">
+                    <span>
+                        The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.                    </span>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="distance">
+                <span>Avg. distance</span>
+            </div>
+            <div class="distance-two">
+                <span>1.6 BIL. km</span>
+            </div>
+            <div class="travel-time">
+                <span>
+                    Est. travel time
+                </span>
+            </div>
+            <div class="travel-days">
+                <span>
+                    7 YEARS
+                </span>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script>
+    function showContent(destination) {
+        // Hide all content elements
+        let contents = document.getElementsByClassName('content');
+        for (let i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+
+        // Show the selected content
+        document.getElementById(destination + '-content').style.display = 'block';
+    }
+</script>
 
 <script src="burger.menu.js"></script>
 

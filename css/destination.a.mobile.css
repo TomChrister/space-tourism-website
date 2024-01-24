@@ -182,3 +182,7 @@ body {
     text-transform: uppercase;
     padding-bottom: 58px;
 }
+
+.content {
+    display: none;
+}
