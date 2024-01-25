@@ -72,7 +72,7 @@
 </div>
 
 <section>
-    <div class="destination">
+   <!-- <div class="destination">
         <p class="number">01</p>
         <p class="pick-your">Pick your destination</p>
     </div>
@@ -84,9 +84,22 @@
         <span class="word" onclick="showContent('mars')">Mars</span>
         <span class="word" onclick="showContent('europa')">Europa</span>
         <span class="word" onclick="showContent('titan')">Titan</span>
-    </div>
+    </div>-->
 
     <div class="carousel-container">
+        <div class="destination">
+            <p class="number">01</p>
+            <p class="pick-your">Pick your destination</p>
+        </div>
+        <div class="moon">
+            <img src="assets/destination/image-moon.png" alt="moon" style="width: 170px">
+        </div>
+        <div class="destination-overview">
+            <span class="word-moon" onclick="showContent('moon')">Moon</span>
+            <span class="word" onclick="showContent('mars')">Mars</span>
+            <span class="word" onclick="showContent('europa')">Europa</span>
+            <span class="word" onclick="showContent('titan')">Titan</span>
+        </div>
         <div class="content" id="moon-content" style="display: block">
             <div class="destination-details">
                 <div class="moon-header">
